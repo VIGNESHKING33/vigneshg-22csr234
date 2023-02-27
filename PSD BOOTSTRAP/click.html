@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nova Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  *{font-family: 'Poppins', sans-serif;}
+.card{box-shadow:5px 5px 20px gray;}
+#sum{box-shadow:0 6px 8px -1px gray;}
+#buy{box-shadow:0px -6px 8px -3px gray;}
+#jack{box-shadow:0px 6px 8px -3px gray;}
+</style>
+</head>
+<body >
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+  <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+</svg>
+  </button>
+    <a class="navbar-brand" href="#">
+      <img src="img2.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
+    </a>
+	 <a class="navbar-brand" href="#"><h3 class='text fw-bold'>Nova Store</h3></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+</svg> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#"><i class="fa fa-cogs"></i> service</a>
+        </li>
+		
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"><i class='fa fa-store'></i> super store</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home appliance</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Smart appliance</a></li>
+          </ul>
+        </li>	
+	  <ul class='nav navbar-nav navbar-left'>
+	  <li><a class='nav-link text-white'href='#'><i class='fa fa-sign-in-alt'></i> Login</a></li>
+	  </ul>
+	<li class="nav-item">
+          <a class="nav-link text-white" href="#"><i class='fa fa-user'></i> About</a></li>
+	<form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button"><li class='fa fa-search'></i></button>
+      </form>
+	  </ul>
+  </div>
+</nav>
+<div id='sum'class='container-fluid'style='margin-top:90px'>
+<div class='row'>
+<div class='col'><a href='#' class='nav-link'><img src='r5.jpg' style='width:62px'>Grocery</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r1.jpg' style='width:47px'>Mobiles</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r6.png' style='width:36px'>Fashion</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r7.jpg' style='width:68px'>Electronics</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r3.jpg' style='width:57px'>Appliance</a></div>
+</div>
+</div>
+<div class='container'style='margin-top:40px'>
+<div class='row'>
+<div class='col-md-1'></div>
+<div class='col-md-6'>
+  <div class="card " style="width:1000px">
+    <img class="card-img-top" src="rr1.jpg" alt="Card image" style="width:40%; margin:20px">
+    <div class="card-body"><hr>
+	<h4 >Color : <b>Blue</b></h4><hr>
+	<h4 id='jack'style='padding:7px;'>Storage : <b>512 GB</b></h4>
+      <h5 class="card-title">SAMSUNG Galaxy Z Fold4 5G (Phantom Black, 512 GB)</h5>
+      <p class="card-text">12 GB RAM<br><span class='badge bg-success'>4.5</span> (100)<br>
+	  <s>74,800</s> $60,600 <span class='text-success'>45% off</span><br>Free delivery<br><span class='text-success'>Lowest Price in 15 days<br>Bank Offer</span></p>
+      <h5 >Details</h5><hr>
+	  <div class="table table-responsive-sm">
+	   <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td >Network Type</td>
+        <td>5G,4G,3G,2G</td>
+      </tr>
+      <tr>
+        <td>SIM Type</td>
+        <td>Dual Sim</td>
+      </tr>
+      <tr>
+        <td>Expandable Storage</td>
+        <td>No</td>
+      </tr>
+	  <tr>
+        <td>Audio Jack</td>
+        <td>No</td>
+      </tr>
+	  <tr>
+        <td>Quick Charging</td>
+        <td>Yes</td>
+      </tr>
+	  <tr>
+        <td>In The Box</td>
+        <td>Handset,Non-removable Battery Included, Data Cable and more</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+	  <div style='margin-bottom:90px'></div>
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
+<div id='buy'class='container-fluid fixed-bottom'>
+<div class='row'>
+<div class='col-md-6 text-center bg-warning'><a class='nav-link'href='#'><h3 style='padding:10px'>Add to cart</h3></a></div>
+<div class='col-md-6 text-center text-white bg-primary'><a class='nav-link'href='form.html'><h3 style='padding:10px'>Buy Now</h3></a></div>
+</div>
+</div>
+
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header bg-info">
+    <h2 class="offcanvas-title"><i class="fa fa-home"></i>Home</h2>
+  </div>
+  <div class="offcanvas-body">
+    <div class='row'>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-plus-square"></i> Nova Plus Zone</a></div>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-th-large"></i> All Categories</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-store"></i> Trending Stores</a></div>
+	<div class='col-md-12'><a href='#' class='nav-link'><i class="fa fa-dizzy"></i> More on Nova</a>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-tags"></i> Offer Zone</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-shopping-bag"></i> Sell on Nova</a></div>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-pager"></i> My Order</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-crown"></i> Coupons</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-shopping-cart"></i> My Cart</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-heart"></i> My Wishlist</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-bell"></i> My Notification</a></div>
+	<div class='col-md-12'><a href='#' class='nav-link'><i class="fa fa-comment-dots"></i> My Chats</a></div>
+	</div>
+  </div>
+</div>
+
+</body>
+</html>

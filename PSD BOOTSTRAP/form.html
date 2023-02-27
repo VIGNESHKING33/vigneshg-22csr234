@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nova Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  *{font-family: 'Poppins', sans-serif;}
+.card{box-shadow:5px 5px 20px gray;}
+#sum{box-shadow:0 6px 8px -1px gray;}
+#sh{box-shadow: 5px 8px 12px gray;}
+}
+</style>
+</head>
+<body >
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+  <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+</svg>
+  </button>
+    <a class="navbar-brand" href="#">
+      <img src="img2.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
+    </a>
+	 <a class="navbar-brand" href="#"><h3 class='text fw-bold'>Nova Store</h3></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+</svg> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#"><i class="fa fa-cogs"></i>service</a>
+        </li>
+		
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"><i class='fa fa-store'></i> super store</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home appliance</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Smart appliance</a></li>
+          </ul>
+        </li>	
+	  <ul class='nav navbar-nav'>
+	  <li><a class='nav-link text-white'href='#'><i class='fa fa-sign-in-alt'></i> Login</a></li>
+	  </ul>
+	<li class="nav-item">
+          <a class="nav-link text-white" href="#"><i class='fa fa-user'></i> About</a></li>
+	<form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button"><li class='fa fa-search'></i></button>
+      </form>
+	  </ul>
+  </div>
+  </div>
+</nav>
+<div id='sum'class='container-fluid'style='margin-top:90px'>
+<div class='row'>
+<div class='col'><a href='#' class='nav-link'><img src='r5.jpg' style='width:62px'>Grocery</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r1.jpg' style='width:47px'>Mobiles</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r6.png' style='width:36px'>Fashion</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r7.jpg' style='width:68px'>Electronics</a></div>
+<div class='col'><a href='#' class='nav-link'><img src='r3.jpg' style='width:57px'>Appliance</a></div>
+</div>
+</div>
+<div class="container" style="margin-top:70px" >
+        <div class="row">
+	
+            <div class="col-md-2"></div>
+			<div class='card'style='width:800px; padding:25px; background:linear-gradient(to top right,#BDE4FF,#13678A)'>
+			<div class="col-md-8">
+                <h3><li class="fa fa-user"></li> User Address</h3><hr>
+            </div>
+			<div class="col-md-2"></div>
+			<div class="col-md-2"></div>
+			<div class='col-md-10'>
+             <form action="/action_page.php">
+			 <div class="mb-3 mt-3">
+    <label for="pwd" class="form-label">Name:</label>
+    <input id='sh'type="text" class="form-control" id="text"placeholder="Enter Name" name="name"required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input id='sh'type="email" class="form-control" id="email" placeholder="Enter email" name="email"required>
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input id='sh'type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"required>
+  </div>
+  <div class="mb-3">
+    <label for="num" class="form-label">Mobile.No:</label>
+    <input id='sh'type="number" class="form-control" id="num" name="num"required>
+  </div>
+  <div class="mb-3">
+    <label for="num" class="form-label">Pincode:</label>
+    <input id='sh'type="number" class="form-control" id="num" name="num"required style='width:250px'>
+  </div>
+  <div class='mb-3'>
+  <div class="form-check">
+  <input id='sh'type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+  <label class="form-check-label" for="radio1"></label>
+</div>
+<div class="form-check">
+  <input id='sh'type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+  <label class="form-check-label" for="radio2"></label>
+</div>
+  </div>
+   <label for="sel1" class="form-label">Select State:</label>
+   <div class='mb-3'>
+    <select id='sh'class="form-select" id="sel1" name="sellist1"style='width:250px'>
+      <option>Tamil Nadu</option>
+      <option>Delhi</option>
+      <option>Karnataka</option>
+      <option>Assam</option>
+    </select>
+	</div>
+	<div class="mb-3">
+    <label for="pwd" class="form-label">City:</label>
+    <input id='sh'type="text" class="form-control" id="text"placeholder="Enter City" name="name"required style='width:250px'>
+  </div>
+  <div class='mb-3'>
+   <label for="comment">Full Address:</label>
+<textarea id='sh'class="form-control" rows="3" id="comment" name="text"></textarea> </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button id='sh'type="submit" class="btn btn-warning"><i class='fa fa-save'></i> Save & Continue</button>
+</form> 
+</div>
+</div>
+</div>
+</div>
+<hr style='margin-top:30px'>
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header bg-info">
+    <h2 class="offcanvas-title"><i class="fa fa-home"></i>Home</h2>
+  </div>
+  <div class="offcanvas-body">
+    <div class='row'>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-plus-square"></i> Nova Plus Zone</a></div>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-th-large"></i> All Categories</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-store"></i> Trending Stores</a></div>
+	<div class='col-md-12'><a href='#' class='nav-link'><i class="fa fa-dizzy"></i> More on Nova</a>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-tags"></i> Offer Zone</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-shopping-bag"></i> Sell on Nova</a></div>
+	<hr>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-pager"></i> My Order</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-crown"></i> Coupons</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-shopping-cart"></i> My Cart</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-heart"></i> My Wishlist</a></div>
+	<div class='col-md-12 mb-2'><a href='#' class='nav-link'><i class="fa fa-bell"></i> My Notification</a></div>
+	<div class='col-md-12'><a href='#' class='nav-link'><i class="fa fa-comment-dots"></i> My Chats</a></div>
+	</div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
